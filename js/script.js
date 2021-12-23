@@ -2001,7 +2001,7 @@ function showErrorMaxProductToast() {
 function showErrorLoginMaxToast() {
   toast({
     title: "Thất bại!",
-    message: "Tài khoản và mật khẩu tối đa 6 kí tự!",
+    message: "Tài khoản và mật khẩu tối đa 22 kí tự!",
     type: "error",
     duration: 5000,
   });
@@ -2204,14 +2204,15 @@ function userLogin() {
   if (email.length < 7 || pass.length < 7) {
     showErrorLoginMinToast();
   }
-  if (email.length > 16 || pass.length > 16) {
+  if (email.length > 22 || pass.length > 22) {
+  console.log(email.length, pass.length)
     showErrorLoginMaxToast();
   }
   if (
-    email.length >= 7 &&
-    pass.length >= 7 &&
-    email.length <= 16 &&
-    pass.length <= 16
+    email.length >= 6 &&
+    pass.length >= 6 &&
+    email.length <= 22 &&
+    pass.length <= 22
   ) {
     window.location.href = "thongtin.html";
   }
