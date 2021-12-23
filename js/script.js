@@ -68,7 +68,41 @@ $(document).ready(function () {
     onBeforePrevSlide: function (el) {},
   });
 });
-
+const sanphamphobien = [
+  {
+    id: 1,
+    token: "sanphamphobien-1",
+    name: "JOMA SUPER REGATE",
+    img: "./img/product/addidas1.jpg",
+    price: 1000000,
+    des: `Phần trên được sản
+  xuất bằng cách sử
+  dụng sợi nhỏ, nylon và TPU chèn trên nylon để bảo vệ chống nứt nẻ
+  . Joma Super Regate bao gồm công nghệ BẢO VỆ ở cổ chân để tăng cường sức đề kháng
+  và sự ổn định cho đòn đánh. Joma Super Regate có hệ thống thông gió VTS cho phép thở
+  và
+  luồng không khí lớn hơn bên trong giày.
+  Đế lót EVA định hình sẵn có thể điều chỉnh theo hình dạng của bàn chân.
+  Đế được sản xuất bằng EVA tự nhiên góp phần tạo đệm cho giày bằng cách
+  hấp thụ tác động từ bàn chân.`,
+  },
+  {
+    id: 2,
+    token: "sanphamphobien-2",
+    name: "ADIDAS STAN SMITH",
+    img: "https://assets.adidas.com/images/h_840,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/346234afc6624c3cab59ab7300cc9c57_9366/Giay_Stan_Smith_trang_FU9609_01_standard.jpg",
+    price: 900000,
+    des: `
+  Đúng chất kinh điển.
+  Trước đây, Stan Smith từng là ngôi sao lớn của làng quần vợt.
+  Mang đôi giày adidas xứng tầm tên tuổi của ông, bạn sẽ là ngôi sao đường phố.
+  Từ trên xuống dưới, đôi giày kinh điển này bắt trọn tinh hoa phong cách của kiểu
+  dáng nguyên bản năm
+  1971,
+  với thiết kế bằng da tối giản và đường nét gọn gàng.
+  `,
+  },
+];
 const sanphammoi = [
   {
     id: 1,
@@ -192,120 +226,117 @@ const ao = [
   },
   {
     id: 5,
-    token:"ao-5",
+    token: "ao-5",
     name: "Ambush",
     img: "./img/product/ambush1.jpg",
     price: 900000,
   },
   {
     id: 6,
-    token:"ao-6",
+    token: "ao-6",
     name: "Áo Runner 1",
     img: "./img/product/adirunner.jpg",
     price: 800000,
   },
   {
     id: 7,
-    token:"ao-7",
+    token: "ao-7",
     name: "Áo khoác Street",
     img: "./img/product/Ao_khoac_Street_sieu_nhe_Hong_GT4405_21_model.jpg",
     price: 600000,
   },
   {
     id: 8,
-    token:"ao-8",
+    token: "ao-8",
     name: "Áo Hoodie",
     img: "./img/product/aohoodie1.jpg",
     price: 900000,
   },
   {
     id: 9,
-    token:"ao-9",
+    token: "ao-9",
     name: "Áo thun gân",
     img: "./img/product/áo-ngực-thun-gân-medium-support-3-sọc-believe-this.jpg",
     price: 800000,
   },
   {
     id: 10,
-    token:"ao-10",
+    token: "ao-10",
     name: "Áo Aoni",
     img: "./img/product/aoni1.jpg",
     price: 700000,
   },
   {
     id: 11,
-    token:"ao-11",
+    token: "ao-11",
     name: "Áo Aopolo",
     img: "./img/product/aopolo1.jpg",
     price: 900000,
   },
   {
     id: 12,
-    token:"ao-12",
+    token: "ao-12",
     name: "Áo thun 1",
     img: "./img/product/aothun1.jpg",
     price: 900000,
   },
   {
     id: 13,
-    token:"ao-13",
+    token: "ao-13",
     name: "Áo Basketball",
     img: "./img/product/kd-basketball-sleeveless-top-pK0RMk.png",
     price: 600000,
   },
   {
     id: 14,
-    token:"ao-14",
+    token: "ao-14",
     name: "Áo Manchester ",
     img: "./img/product/mu2.jpg",
     price: 600000,
   },
   {
     id: 15,
-    token:"ao-15",
+    token: "ao-15",
     name: "Áo Adidas có cổ",
     img: "./img/product/aococo.jpg",
     price: 900000,
   },
   {
     id: 16,
-    token:"ao-16",
+    token: "ao-16",
     name: "Áo Adidas Tay Dài ",
     img: "./img/product/dasdai.jpg",
     price: 800000,
   },
   {
     id: 17,
-    token:"ao-17",
+    token: "ao-17",
     name: "Áo Arsenal",
     img: "./img/product/ars1.jpg",
     price: 900000,
   },
   {
     id: 18,
-    token:"ao-18",
+    token: "ao-18",
     name: "Áo Bayern",
     img: "./img/product/baye.jpg",
     price: 700000,
   },
   {
     id: 19,
-    token:"ao-19",
+    token: "ao-19",
     name: "Áo Man Đen",
     img: "./img/product/blackMu.jpg",
     price: 800000,
   },
   {
     id: 20,
-    token:"ao-20",
+    token: "ao-20",
     name: "Áo Man Sọc",
     img: "./img/product/mu4.jpg",
     price: 900000,
   },
 ];
-
-
-
 
 const quan = [
   {
@@ -447,8 +478,6 @@ const quan = [
     img: "./img/product/q19.jpg",
     price: 600000,
   },
- 
- 
 ];
 
 const giay = [
@@ -599,9 +628,7 @@ const giay = [
   },
 ];
 
-
-
-
+var spphobien = document.querySelector("#spphobien");
 var listProductNew = document.querySelector("#listProductNew");
 var listProductSale = document.querySelector("#listProductSale");
 var listProductYml = document.querySelector("#listProductYml");
@@ -639,6 +666,7 @@ var cothebanthichGiay = document.querySelector("#cothebanthichGiay");
 }
 
 function renderSanphammoi() {
+  renderSanphamPhoBien();
   sanphammoi.map((item, index) => {
     listProductNew.innerHTML += `
         <div class="col-lg-3 col-md-6 col-sm-12 mb-20">
@@ -923,8 +951,12 @@ function renderAo() {
                   ${item.name}
                   </h5>
                   <div class="product__price">
-                     <p class="card-text price-color product__price-old">${item.price+200000}đ</p>
-                      <p class="card-text price-color product__price-new">${item.price} đ</p>
+                     <p class="card-text price-color product__price-old">${
+                       item.price + 200000
+                     }đ</p>
+                      <p class="card-text price-color product__price-new">${
+                        item.price
+                      } đ</p>
                   </div>
                   <div class="home-product-item__action">
                          
@@ -934,19 +966,31 @@ function renderAo() {
                       </div>
                       <div class="select-swap">
                           <div class="swatch-element" data-value="38">
-                              <input type="radio" class="variant-1" id="swatch-ao-${item.img}-1" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-ao-${
+                                item.img
+                              }-1" name="mau"
                                   value="S" >
-                              <label for="swatch-ao-${item.img}-1" class="sd"><span>38</span></label>
+                              <label for="swatch-ao-${
+                                item.img
+                              }-1" class="sd"><span>38</span></label>
                           </div>
                           <div class="swatch-element" data-value="39">
-                              <input type="radio" class="variant-1" id="swatch-ao-${item.img}-2" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-ao-${
+                                item.img
+                              }-2" name="mau"
                                   value="M" >
-                              <label for="swatch-ao-${item.img}-2" class="sd"><span>39</span></label>
+                              <label for="swatch-ao-${
+                                item.img
+                              }-2" class="sd"><span>39</span></label>
                           </div>
                           <div class="swatch-element" data-value="40">
-                              <input type="radio" class="variant-1" id="swatch-ao-${item.img}-3" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-ao-${
+                                item.img
+                              }-3" name="mau"
                                   value="L" >
-                              <label for="swatch-ao-${item.img}-3" class="sd"><span>40</span></label>
+                              <label for="swatch-ao-${
+                                item.img
+                              }-3" class="sd"><span>40</span></label>
                           </div>
                       </div>
                   </div>
@@ -954,7 +998,9 @@ function renderAo() {
                       <div class="product__amount w-100">
                           <div class="product__wap-change d-flex justify-content-center">
                                 <p for="" class = "soluong">Nhập số lượng: </p>
-                                <input type="text" value = "1"  class="text-input" id="text_so_luong-ao-${item.id}">
+                                <input type="text" value = "1"  class="text-input" id="text_so_luong-ao-${
+                                  item.id
+                                }">
                                 </div>
                                 </div>
                             </div>
@@ -990,8 +1036,12 @@ function renderAo() {
                   ${item.name}
                   </h5>
                   <div class="product__price">
-                     <p class="card-text price-color product__price-old">${item.price+200000}đ</p>
-                      <p class="card-text price-color product__price-new">${item.price} đ</p>
+                     <p class="card-text price-color product__price-old">${
+                       item.price + 200000
+                     }đ</p>
+                      <p class="card-text price-color product__price-new">${
+                        item.price
+                      } đ</p>
                   </div>
                   <div class="home-product-item__action">
                          
@@ -1001,19 +1051,31 @@ function renderAo() {
                       </div>
                       <div class="select-swap">
                           <div class="swatch-element" data-value="38">
-                              <input type="radio" class="variant-1" id="swatch-ao-${item.img}-1" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-ao-${
+                                item.img
+                              }-1" name="mau"
                                   value="S" >
-                              <label for="swatch-ao-${item.img}-1" class="sd"><span>38</span></label>
+                              <label for="swatch-ao-${
+                                item.img
+                              }-1" class="sd"><span>38</span></label>
                           </div>
                           <div class="swatch-element" data-value="39">
-                              <input type="radio" class="variant-1" id="swatch-ao-${item.img}-2" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-ao-${
+                                item.img
+                              }-2" name="mau"
                                   value="M" >
-                              <label for="swatch-ao-${item.img}-2" class="sd"><span>39</span></label>
+                              <label for="swatch-ao-${
+                                item.img
+                              }-2" class="sd"><span>39</span></label>
                           </div>
                           <div class="swatch-element" data-value="40">
-                              <input type="radio" class="variant-1" id="swatch-ao-${item.img}-3" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-ao-${
+                                item.img
+                              }-3" name="mau"
                                   value="L" >
-                              <label for="swatch-ao-${item.img}-3" class="sd"><span>40</span></label>
+                              <label for="swatch-ao-${
+                                item.img
+                              }-3" class="sd"><span>40</span></label>
                           </div>
                       </div>
                   </div>
@@ -1021,7 +1083,9 @@ function renderAo() {
                       <div class="product__amount w-100">
                           <div class="product__wap-change d-flex justify-content-center">
                                 <p for="" class = "soluong">Nhập số lượng: </p>
-                                <input type="text" value = "1"  class="text-input" id="text_so_luong-ao-${item.id}">
+                                <input type="text" value = "1"  class="text-input" id="text_so_luong-ao-${
+                                  item.id
+                                }">
                                 </div>
                                 </div>
                             </div>
@@ -1058,8 +1122,12 @@ function renderAo() {
                   ${item.name}
                   </h5>
                   <div class="product__price">
-                     <p class="card-text price-color product__price-old">${item.price+200000}đ</p>
-                      <p class="card-text price-color product__price-new">${item.price} đ</p>
+                     <p class="card-text price-color product__price-old">${
+                       item.price + 200000
+                     }đ</p>
+                      <p class="card-text price-color product__price-new">${
+                        item.price
+                      } đ</p>
                   </div>
                   <div class="home-product-item__action">
                          
@@ -1069,19 +1137,31 @@ function renderAo() {
                       </div>
                       <div class="select-swap">
                           <div class="swatch-element" data-value="38">
-                              <input type="radio" class="variant-1" id="swatch-ao-${item.img}-1" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-ao-${
+                                item.img
+                              }-1" name="mau"
                                   value="S" >
-                              <label for="swatch-ao-${item.img}-1" class="sd"><span>38</span></label>
+                              <label for="swatch-ao-${
+                                item.img
+                              }-1" class="sd"><span>38</span></label>
                           </div>
                           <div class="swatch-element" data-value="39">
-                              <input type="radio" class="variant-1" id="swatch-ao-${item.img}-2" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-ao-${
+                                item.img
+                              }-2" name="mau"
                                   value="M" >
-                              <label for="swatch-ao-${item.img}-2" class="sd"><span>39</span></label>
+                              <label for="swatch-ao-${
+                                item.img
+                              }-2" class="sd"><span>39</span></label>
                           </div>
                           <div class="swatch-element" data-value="40">
-                              <input type="radio" class="variant-1" id="swatch-ao-${item.img}-3" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-ao-${
+                                item.img
+                              }-3" name="mau"
                                   value="L" >
-                              <label for="swatch-ao-${item.img}-3" class="sd"><span>40</span></label>
+                              <label for="swatch-ao-${
+                                item.img
+                              }-3" class="sd"><span>40</span></label>
                           </div>
                       </div>
                   </div>
@@ -1089,7 +1169,9 @@ function renderAo() {
                       <div class="product__amount w-100">
                           <div class="product__wap-change d-flex justify-content-center">
                                 <p for="" class = "soluong">Nhập số lượng: </p>
-                                <input type="text" value = "1"  class="text-input" id="text_so_luong-ao-${item.id}">
+                                <input type="text" value = "1"  class="text-input" id="text_so_luong-ao-${
+                                  item.id
+                                }">
                                 </div>
                                 </div>
                             </div>
@@ -1118,7 +1200,9 @@ function renderQuan() {
   quan.map(function (item, i) {
     if (i < 8) {
       quanMoive.innerHTML += `
-      <div class="col-lg-3 col-md-6 col-sm-12 mb-20" onclick = "getProduct(${item.id})">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-20" onclick = "getProduct(${
+        item.id
+      })">
       <div href="./ProductDetail.html" class="product__new-item">
           <div class="card" style="width: 100%">
           <div>
@@ -1130,8 +1214,12 @@ function renderQuan() {
                   ${item.name}
                   </h5>
                   <div class="product__price">
-                  <p class="card-text price-color product__price-old">${item.price+200000}đ</p>
-                  <p class="card-text price-color product__price-new">${item.price} đ</p>
+                  <p class="card-text price-color product__price-old">${
+                    item.price + 200000
+                  }đ</p>
+                  <p class="card-text price-color product__price-new">${
+                    item.price
+                  } đ</p>
                   </div>
                   <div class="home-product-item__action">
                          
@@ -1141,19 +1229,31 @@ function renderQuan() {
                       </div>
                       <div class="select-swap">
                           <div class="swatch-element" data-value="38">
-                              <input type="radio" class="variant-1" id="swatch-quan-${item.img}-1" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-quan-${
+                                item.img
+                              }-1" name="mau"
                                   value="S" >
-                              <label for="swatch-quan-${item.img}-1" class="sd"><span>38</span></label>
+                              <label for="swatch-quan-${
+                                item.img
+                              }-1" class="sd"><span>38</span></label>
                           </div>
                           <div class="swatch-element" data-value="39">
-                              <input type="radio" class="variant-1" id="swatch-quan-${item.img}-2" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-quan-${
+                                item.img
+                              }-2" name="mau"
                                   value="M" >
-                              <label for="swatch-quan-${item.img}-2" class="sd"><span>39</span></label>
+                              <label for="swatch-quan-${
+                                item.img
+                              }-2" class="sd"><span>39</span></label>
                           </div>
                           <div class="swatch-element" data-value="40">
-                              <input type="radio" class="variant-1" id="swatch-quan-${item.img}-3" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-quan-${
+                                item.img
+                              }-3" name="mau"
                                   value="L" >
-                              <label for="swatch-quan-${item.img}-3" class="sd"><span>40</span></label>
+                              <label for="swatch-quan-${
+                                item.img
+                              }-3" class="sd"><span>40</span></label>
                           </div>
                       </div>
                   </div>
@@ -1161,7 +1261,9 @@ function renderQuan() {
                       <div class="product__amount w-100">
                           <div class="product__wap-change d-flex justify-content-center">
                                 <p for="" class = "soluong">Nhập số lượng: </p>
-                                    <input type="text" value = "1"  class="text-input" id="text_so_luong-quan-${item.id}">
+                                    <input type="text" value = "1"  class="text-input" id="text_so_luong-quan-${
+                                      item.id
+                                    }">
                                 </div>
                             </div>
                       </div>
@@ -1184,7 +1286,9 @@ function renderQuan() {
     }
     if (i >= 8 && i < 16) {
       quanBanchay.innerHTML += `
-      <div class="col-lg-3 col-md-6 col-sm-12 mb-20" onclick = "getProduct(${item.id})">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-20" onclick = "getProduct(${
+        item.id
+      })">
       <div href="./ProductDetail.html" class="product__new-item">
           <div class="card" style="width: 100%">
           <div>
@@ -1196,8 +1300,12 @@ function renderQuan() {
                   ${item.name}
                   </h5>
                   <div class="product__price">
-                      <p class="card-text price-color product__price-old">${item.price+200000}đ</p>
-                      <p class="card-text price-color product__price-new">${item.price} đ</p>
+                      <p class="card-text price-color product__price-old">${
+                        item.price + 200000
+                      }đ</p>
+                      <p class="card-text price-color product__price-new">${
+                        item.price
+                      } đ</p>
                   </div>
                   <div class="home-product-item__action">
                          
@@ -1207,19 +1315,31 @@ function renderQuan() {
                       </div>
                       <div class="select-swap">
                           <div class="swatch-element" data-value="38">
-                              <input type="radio" class="variant-1" id="swatch-quan-${item.img}-1" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-quan-${
+                                item.img
+                              }-1" name="mau"
                                   value="S" >
-                              <label for="swatch-quan-${item.img}-1" class="sd"><span>38</span></label>
+                              <label for="swatch-quan-${
+                                item.img
+                              }-1" class="sd"><span>38</span></label>
                           </div>
                           <div class="swatch-element" data-value="39">
-                              <input type="radio" class="variant-1" id="swatch-quan-${item.img}-2" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-quan-${
+                                item.img
+                              }-2" name="mau"
                                   value="M" >
-                              <label for="swatch-quan-${item.img}-2" class="sd"><span>39</span></label>
+                              <label for="swatch-quan-${
+                                item.img
+                              }-2" class="sd"><span>39</span></label>
                           </div>
                           <div class="swatch-element" data-value="40">
-                              <input type="radio" class="variant-1" id="swatch-quan-${item.img}-3" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-quan-${
+                                item.img
+                              }-3" name="mau"
                                   value="L" >
-                              <label for="swatch-quan-${item.img}-3" class="sd"><span>40</span></label>
+                              <label for="swatch-quan-${
+                                item.img
+                              }-3" class="sd"><span>40</span></label>
                           </div>
                       </div>
                   </div>
@@ -1227,7 +1347,9 @@ function renderQuan() {
                       <div class="product__amount w-100">
                           <div class="product__wap-change d-flex justify-content-center">
                                 <p for="" class = "soluong">Nhập số lượng: </p>
-                                    <input type="text" value = "1"  class="text-input" id="text_so_luong-quan-${item.id}">
+                                    <input type="text" value = "1"  class="text-input" id="text_so_luong-quan-${
+                                      item.id
+                                    }">
                                 </div>
                             </div>
                       </div>
@@ -1250,7 +1372,9 @@ function renderQuan() {
     }
     if (i >= 15) {
       cothebanthichQuan.innerHTML += `
-      <div class="col-lg-3 col-md-6 col-sm-12 mb-20" onclick = "getProduct(${item.id})">
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-20" onclick = "getProduct(${
+        item.id
+      })">
       <div href="./ProductDetail.html" class="product__new-item">
           <div class="card" style="width: 100%">
           <div>
@@ -1262,8 +1386,12 @@ function renderQuan() {
                   ${item.name}
                   </h5>
                   <div class="product__price">
-                     <p class="card-text price-color product__price-old">${item.price+200000}đ</p>
-                      <p class="card-text price-color product__price-new">${item.price} đ</p>
+                     <p class="card-text price-color product__price-old">${
+                       item.price + 200000
+                     }đ</p>
+                      <p class="card-text price-color product__price-new">${
+                        item.price
+                      } đ</p>
                   </div>
                   <div class="home-product-item__action">
                          
@@ -1273,19 +1401,31 @@ function renderQuan() {
                       </div>
                       <div class="select-swap">
                           <div class="swatch-element" data-value="38">
-                              <input type="radio" class="variant-1" id="swatch-quan-${item.img}-1" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-quan-${
+                                item.img
+                              }-1" name="mau"
                                   value="S" >
-                              <label for="swatch-quan-${item.img}-1" class="sd"><span>38</span></label>
+                              <label for="swatch-quan-${
+                                item.img
+                              }-1" class="sd"><span>38</span></label>
                           </div>
                           <div class="swatch-element" data-value="39">
-                              <input type="radio" class="variant-1" id="swatch-quan-${item.img}-2" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-quan-${
+                                item.img
+                              }-2" name="mau"
                                   value="M" >
-                              <label for="swatch-quan-${item.img}-2" class="sd"><span>39</span></label>
+                              <label for="swatch-quan-${
+                                item.img
+                              }-2" class="sd"><span>39</span></label>
                           </div>
                           <div class="swatch-element" data-value="40">
-                              <input type="radio" class="variant-1" id="swatch-quan-${item.img}-3" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-quan-${
+                                item.img
+                              }-3" name="mau"
                                   value="L" >
-                              <label for="swatch-quan-${item.img}-3" class="sd"><span>40</span></label>
+                              <label for="swatch-quan-${
+                                item.img
+                              }-3" class="sd"><span>40</span></label>
                           </div>
                       </div>
                   </div>
@@ -1293,7 +1433,9 @@ function renderQuan() {
                       <div class="product__amount w-100">
                           <div class="product__wap-change d-flex justify-content-center">
                                 <p for="" class = "soluong">Nhập số lượng: </p>
-                                    <input type="text" value = "1"  class="text-input" id="text_so_luong-quan-${item.id}">
+                                    <input type="text" value = "1"  class="text-input" id="text_so_luong-quan-${
+                                      item.id
+                                    }">
                                 </div>
                             </div>
                       </div>
@@ -1316,7 +1458,26 @@ function renderQuan() {
     }
   });
 }
-
+function renderSanphamPhoBien() {
+  sanphamphobien.map(function (item, i) {
+    console.log(item);
+    spphobien.innerHTML += `
+    <div class="col-lg-6 col-sm-12 mb-20">
+    <div class="card" style="width: 100%;">
+    <div>
+    <img class="card-img-top" src= ${item.img} alt="Card image cap"  onclick = "getDetailProduct(sanphamphobien,${item.id})">
+        <div class="card-body">
+            <h4 class="card-title">Joma Super Regate</h4>
+            <p class="card-text custom__name-product" style="font-weight: 400;">${item.des}</p>
+            <div title="GIÀY ADIDAS 4D FUTURECRAFT"
+                class="btn btn-buynow" onclick = "getDetailProduct(sanphamphobien,${item.id})" >Xem ngay <i class="fas fa-arrow-right"
+                    style="font-size: 16px;margin-left: 5px;"></i></div>
+        </div>
+    </div>
+</div>
+    `;
+  });
+}
 
 function renderGiay() {
   giay.map(function (item, i) {
@@ -1334,8 +1495,12 @@ function renderGiay() {
                   ${item.name}
                   </h5>
                   <div class="product__price">
-                     <p class="card-text price-color product__price-old">${item.price+200000}đ</p>
-                      <p class="card-text price-color product__price-new">${item.price} đ</p>
+                     <p class="card-text price-color product__price-old">${
+                       item.price + 200000
+                     }đ</p>
+                      <p class="card-text price-color product__price-new">${
+                        item.price
+                      } đ</p>
                   </div>
                   <div class="home-product-item__action">
                          
@@ -1345,19 +1510,31 @@ function renderGiay() {
                       </div>
                       <div class="select-swap">
                           <div class="swatch-element" data-value="38">
-                              <input type="radio" class="variant-1" id="swatch-giay-${item.img}-1" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-giay-${
+                                item.img
+                              }-1" name="mau"
                                   value="S" >
-                              <label for="swatch-giay-${item.img}-1" class="sd"><span>38</span></label>
+                              <label for="swatch-giay-${
+                                item.img
+                              }-1" class="sd"><span>38</span></label>
                           </div>
                           <div class="swatch-element" data-value="39">
-                              <input type="radio" class="variant-1" id="swatch-giay-${item.img}-2" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-giay-${
+                                item.img
+                              }-2" name="mau"
                                   value="M" >
-                              <label for="swatch-giay-${item.img}-2" class="sd"><span>39</span></label>
+                              <label for="swatch-giay-${
+                                item.img
+                              }-2" class="sd"><span>39</span></label>
                           </div>
                           <div class="swatch-element" data-value="40">
-                              <input type="radio" class="variant-1" id="swatch-giay-${item.img}-3" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-giay-${
+                                item.img
+                              }-3" name="mau"
                                   value="L" >
-                              <label for="swatch-giay-${item.img}-3" class="sd"><span>40</span></label>
+                              <label for="swatch-giay-${
+                                item.img
+                              }-3" class="sd"><span>40</span></label>
                           </div>
                       </div>
                   </div>
@@ -1365,7 +1542,9 @@ function renderGiay() {
                       <div class="product__amount w-100">
                           <div class="product__wap-change d-flex justify-content-center">
                                 <p for="" class = "soluong">Nhập số lượng: </p>
-                                    <input type="text" value = "1"  class="text-input" id="text_so_luong-giay-${item.id}">
+                                    <input type="text" value = "1"  class="text-input" id="text_so_luong-giay-${
+                                      item.id
+                                    }">
                                 </div>
                             </div>
                       </div>
@@ -1400,8 +1579,12 @@ function renderGiay() {
                   ${item.name}
                   </h5>
                   <div class="product__price">
-                     <p class="card-text price-color product__price-old">${item.price+200000}đ</p>
-                      <p class="card-text price-color product__price-new">${item.price} đ</p>
+                     <p class="card-text price-color product__price-old">${
+                       item.price + 200000
+                     }đ</p>
+                      <p class="card-text price-color product__price-new">${
+                        item.price
+                      } đ</p>
                   </div>
                   <div class="home-product-item__action">
                          
@@ -1411,19 +1594,31 @@ function renderGiay() {
                       </div>
                       <div class="select-swap">
                           <div class="swatch-element" data-value="38">
-                              <input type="radio" class="variant-1" id="swatch-giay-${item.img}-1" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-giay-${
+                                item.img
+                              }-1" name="mau"
                                   value="S" >
-                              <label for="swatch-giay-${item.img}-1" class="sd"><span>38</span></label>
+                              <label for="swatch-giay-${
+                                item.img
+                              }-1" class="sd"><span>38</span></label>
                           </div>
                           <div class="swatch-element" data-value="39">
-                              <input type="radio" class="variant-1" id="swatch-giay-${item.img}-2" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-giay-${
+                                item.img
+                              }-2" name="mau"
                                   value="M" >
-                              <label for="swatch-giay-${item.img}-2" class="sd"><span>39</span></label>
+                              <label for="swatch-giay-${
+                                item.img
+                              }-2" class="sd"><span>39</span></label>
                           </div>
                           <div class="swatch-element" data-value="40">
-                              <input type="radio" class="variant-1" id="swatch-giay-${item.img}-3" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-giay-${
+                                item.img
+                              }-3" name="mau"
                                   value="L" >
-                              <label for="swatch-giay-${item.img}-3" class="sd"><span>40</span></label>
+                              <label for="swatch-giay-${
+                                item.img
+                              }-3" class="sd"><span>40</span></label>
                           </div>
                       </div>
                   </div>
@@ -1431,7 +1626,9 @@ function renderGiay() {
                       <div class="product__amount w-100">
                           <div class="product__wap-change d-flex justify-content-center">
                                 <p for="" class = "soluong">Nhập số lượng: </p>
-                                    <input type="text" value = "1"  class="text-input" id="text_so_luong-giay-${item.id}">
+                                    <input type="text" value = "1"  class="text-input" id="text_so_luong-giay-${
+                                      item.id
+                                    }">
                                 </div>
                             </div>
                       </div>
@@ -1467,8 +1664,12 @@ function renderGiay() {
                   ${item.name}
                   </h5>
                   <div class="product__price">
-                     <p class="card-text price-color product__price-old">${item.price+200000}đ</p>
-                      <p class="card-text price-color product__price-new">${item.price} đ</p>
+                     <p class="card-text price-color product__price-old">${
+                       item.price + 200000
+                     }đ</p>
+                      <p class="card-text price-color product__price-new">${
+                        item.price
+                      } đ</p>
                   </div>
                   <div class="home-product-item__action">
                          
@@ -1478,19 +1679,31 @@ function renderGiay() {
                       </div>
                       <div class="select-swap">
                           <div class="swatch-element" data-value="38">
-                              <input type="radio" class="variant-1" id="swatch-giay-${item.img}-1" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-giay-${
+                                item.img
+                              }-1" name="mau"
                                   value="S" >
-                              <label for="swatch-giay-${item.img}-1" class="sd"><span>38</span></label>
+                              <label for="swatch-giay-${
+                                item.img
+                              }-1" class="sd"><span>38</span></label>
                           </div>
                           <div class="swatch-element" data-value="39">
-                              <input type="radio" class="variant-1" id="swatch-giay-${item.img}-2" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-giay-${
+                                item.img
+                              }-2" name="mau"
                                   value="M" >
-                              <label for="swatch-giay-${item.img}-2" class="sd"><span>39</span></label>
+                              <label for="swatch-giay-${
+                                item.img
+                              }-2" class="sd"><span>39</span></label>
                           </div>
                           <div class="swatch-element" data-value="40">
-                              <input type="radio" class="variant-1" id="swatch-giay-${item.img}-3" name="mau"
+                              <input type="radio" class="variant-1" id="swatch-giay-${
+                                item.img
+                              }-3" name="mau"
                                   value="L" >
-                              <label for="swatch-giay-${item.img}-3" class="sd"><span>40</span></label>
+                              <label for="swatch-giay-${
+                                item.img
+                              }-3" class="sd"><span>40</span></label>
                           </div>
                       </div>
                   </div>
@@ -1498,7 +1711,9 @@ function renderGiay() {
                       <div class="product__amount w-100">
                           <div class="product__wap-change d-flex justify-content-center">
                                 <p for="" class = "soluong">Nhập số lượng: </p>
-                                    <input type="text" value = "1"  class="text-input" id="text_so_luong-giay-${item.id}">
+                                    <input type="text" value = "1"  class="text-input" id="text_so_luong-giay-${
+                                      item.id
+                                    }">
                                 </div>
                             </div>
                       </div>
