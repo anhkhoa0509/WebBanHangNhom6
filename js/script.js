@@ -2201,7 +2201,7 @@ function getDetailProduct(arr, id) {
 function userLogin() {
   const email = document.querySelector("#email").value;
   const pass = document.querySelector("#password").value;
-  if (email.length < 7 || pass.length < 7) {
+  if (email.length < 6 || pass.length <66) {
     showErrorLoginMinToast();
   }
   if (email.length > 22 || pass.length > 22) {
